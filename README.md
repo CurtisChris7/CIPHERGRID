@@ -750,11 +750,11 @@ See [LICENSE](LICENSE) for the full license text.
 If you use CIPHERGRID in academic work, cite the corresponding paper or preprint.
 
 ```bibtex
-@misc{ciphergrid2026,
-  title        = {CIPHERGRID Benchmark: From Multimodal Rule Inference to Sequential Action},
-  author       = {Christopher Curtis and Victor Fragoso and Saiph Savage},
-  year         = {2026},
-  howpublished = {GitHub repository},
-  note         = {Benchmark, solver, validation scripts, model runners, and vocabulary-remapping utilities}
+@inproceedings{curtis2026ciphergrid,
+  title     = {{CIPHERGRID} Benchmark: From Multimodal Rule Inference to Sequential Action},
+  author    = {Curtis, Christopher and Fragoso, Victor and Savage, Saiph},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2026},
+  note      = {Accepted, Evaluations and Datasets Track}
 }
 ```
