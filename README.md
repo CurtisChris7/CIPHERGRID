@@ -746,7 +746,7 @@ If you use CIPHERGRID in academic work, cite the corresponding paper or preprint
 ```bibtex
 @misc{ciphergrid2026,
   title        = {CIPHERGRID Benchmark: From Multimodal Rule Inference to Sequential Action},
-  author       = {WITHHELD DURING REVIEW},
+  author       = {Christopher Curtis, Victor Fragoso, Saiph Savage},
   year         = {2026},
   howpublished = {GitHub repository},
   note         = {Benchmark, solver, validation scripts, model runners, and vocabulary-remapping utilities}
