@@ -4,6 +4,7 @@ Christopher Curtis, Victor Fragoso, and Saiph Savage
 **Accepted at NeurIPS 2026 — Evaluations and Datasets Track.**
 
 **Dataset:** [Hugging Face](https://huggingface.co/datasets/AnonCC7/CIPHERGRID)
+
 **Paper:** [Link Posted Upon Publication]
 
 CIPHERGRID is a multimodal rule-inference and path-finding benchmark. A model must infer a latent symbolic vocabulary from fixed text-and-image demonstrations, decode a new grid world, apply the game rules, plan a valid route, and return the solution in the same encoded action language.
