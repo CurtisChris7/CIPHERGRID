@@ -1,0 +1,6 @@
+# Direct dependencies for the provider runners.
+# Newly tested setup; not a reconstruction of the paper's original environment.
+openai==2.54.0
+anthropic==1.9.0
+google-genai==2.25.0
+httpx==0.28.1

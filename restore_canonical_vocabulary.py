@@ -3,6 +3,9 @@
 Restore a fully custom-vocabulary CipherGrid benchmark JSONL to canonical
 symbology, including restoration of the custom row marker to canonical "wa".
 
+Prompt line breaks may be real newlines or literal ``\\n`` sequences; their
+original representation is preserved.
+
 Only prompt-base, query, and answer are modified. All other fields, including
 the base64 image, are preserved unchanged.
 """
@@ -385,7 +388,14 @@ def convert_prompt(
         r"^(\s*->\s+)(\S+)([ \t]*(?:\r?\n)?)$"
     )
 
-    for line_number, line in enumerate(prompt.splitlines(keepends=True), start=1):
+    # Capture separators so both actual and literal newlines survive unchanged.
+    # Do not unescape the entire prompt: that could alter unrelated text.
+    parts = re.split(r"(\\n|\r\n|\r|\n)", prompt)
+    for part_index, line in enumerate(parts):
+        if part_index % 2:
+            converted_lines.append(line)
+            continue
+        line_number = part_index // 2 + 1
         grid_match = grid_pattern.match(line)
         if grid_match:
             prefix, encoded, suffix = grid_match.groups()

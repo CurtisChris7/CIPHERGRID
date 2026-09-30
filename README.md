@@ -123,21 +123,26 @@ The validator replays solutions through the same transition function used by the
 
 ## Installation
 
-Python 3.10 or newer is recommended.
+Install the pinned provider SDKs:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
-Install only the provider SDKs needed for the models you plan to run:
+For the full dependency snapshot tested with Python 3.12.14 on Linux, use:
 
 ```bash
-pip install openai anthropic google-genai httpx
+python -m pip install -r requirements-lock.txt
+python -m pip check
 ```
 
-The generation, remapping, cleaning, solver, validation, and analysis utilities primarily use the Python standard library.
+These pins describe a newly tested setup, not the original environment used for the paper's experiments; that environment was not recorded in this repository. Validation covers installation, provider imports, command-line help, client/configuration construction, and offline vocabulary round trips. Live model API calls were not tested. The full snapshot includes transitive dependencies and was tested only on the platform above.
+
+Run the vocabulary regression test (no provider SDKs required):
+
+```bash
+python -m unittest discover -s tests -v
+```
 
 ## API keys
 
