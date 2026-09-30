@@ -743,6 +743,7 @@ Use failure logging where available, retain the affected IDs, and rerun those ID
 ## License
 
 The benchmark and accompanying repository materials are released under the Creative Commons Attribution 4.0 International license (CC BY 4.0).
+See [LICENSE](LICENSE) for the full license text.
 
 ## Citation
 
