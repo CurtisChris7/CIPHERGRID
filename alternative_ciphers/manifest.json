@@ -1,0 +1,46 @@
+{
+  "source_schema": "custom_vocabulary.example(2).json",
+  "number_of_schemes": 5,
+  "distribution": {
+    "abstract_symbols": 2,
+    "numbers": 1,
+    "english_characters": 2
+  },
+  "validation": [
+    {
+      "scheme": 1,
+      "type": "abstract_symbols_1",
+      "file": "custom_vocabulary_1_abstract_symbols_1.json",
+      "token_count": 20,
+      "unique_tokens": true
+    },
+    {
+      "scheme": 2,
+      "type": "abstract_symbols_2",
+      "file": "custom_vocabulary_2_abstract_symbols_2.json",
+      "token_count": 20,
+      "unique_tokens": true
+    },
+    {
+      "scheme": 3,
+      "type": "numbers",
+      "file": "custom_vocabulary_3_numbers.json",
+      "token_count": 20,
+      "unique_tokens": true
+    },
+    {
+      "scheme": 4,
+      "type": "english_letters_1",
+      "file": "custom_vocabulary_4_english_letters_1.json",
+      "token_count": 20,
+      "unique_tokens": true
+    },
+    {
+      "scheme": 5,
+      "type": "english_letters_2",
+      "file": "custom_vocabulary_5_english_letters_2.json",
+      "token_count": 20,
+      "unique_tokens": true
+    }
+  ]
+}

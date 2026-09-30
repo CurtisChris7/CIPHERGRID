@@ -1,0 +1,26 @@
+{
+  "row_marker": "◆",
+  "tiles": {
+    "WALL": "●",
+    "OPEN": "■",
+    "GOAL": "▲",
+    "START": "⬟",
+    "MONSTER": "⬢",
+    "REVERSAL": "◉",
+    "SWORD": "◍",
+    "PLANK": "◐",
+    "WATER": "◒",
+    "TRAP": "✦"
+  },
+  "actions": {
+    "UP": "✧",
+    "RIGHT": "✶",
+    "LEFT": "✹",
+    "DOWN": "✺",
+    "PICKUP": "✻",
+    "ATTACK": "✼",
+    "PLACE": "✽",
+    "SWIM": "✾",
+    "RESIGN": "❖"
+  }
+}

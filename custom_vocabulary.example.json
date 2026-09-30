@@ -1,0 +1,26 @@
+{
+  "row_marker": "row",
+  "tiles": {
+    "WALL": "wall",
+    "OPEN": "open",
+    "GOAL": "goal",
+    "START": "start",
+    "MONSTER": "monster",
+    "REVERSAL": "reversal",
+    "SWORD": "sword",
+    "PLANK": "plank",
+    "WATER": "water",
+    "TRAP": "trap"
+  },
+  "actions": {
+    "UP": "up",
+    "RIGHT": "right",
+    "LEFT": "left",
+    "DOWN": "down",
+    "PICKUP": "pickup",
+    "ATTACK": "attack",
+    "PLACE": "place",
+    "SWIM": "swim",
+    "RESIGN": "resign"
+  }
+}

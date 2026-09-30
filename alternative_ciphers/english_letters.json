@@ -1,0 +1,26 @@
+{
+  "row_marker": "qx",
+  "tiles": {
+    "WALL": "br",
+    "OPEN": "nt",
+    "GOAL": "vk",
+    "START": "jm",
+    "MONSTER": "pf",
+    "REVERSAL": "zl",
+    "SWORD": "dw",
+    "PLANK": "hs",
+    "WATER": "cy",
+    "TRAP": "rg"
+  },
+  "actions": {
+    "UP": "mb",
+    "RIGHT": "xt",
+    "LEFT": "kp",
+    "DOWN": "fv",
+    "PICKUP": "sn",
+    "ATTACK": "lc",
+    "PLACE": "wj",
+    "SWIM": "tz",
+    "RESIGN": "gh"
+  }
+}

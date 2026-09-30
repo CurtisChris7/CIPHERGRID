@@ -1,0 +1,26 @@
+{
+  "row_marker": "157",
+  "tiles": {
+    "WALL": "423",
+    "OPEN": "363",
+    "GOAL": "838",
+    "START": "104",
+    "MONSTER": "129",
+    "REVERSAL": "187",
+    "SWORD": "203",
+    "PLANK": "246",
+    "WATER": "311",
+    "TRAP": "374"
+  },
+  "actions": {
+    "UP": "419",
+    "RIGHT": "502",
+    "LEFT": "577",
+    "DOWN": "641",
+    "PICKUP": "708",
+    "ATTACK": "793",
+    "PLACE": "864",
+    "SWIM": "931",
+    "RESIGN": "997"
+  }
+}
