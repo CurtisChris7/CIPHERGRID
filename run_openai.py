@@ -24,7 +24,7 @@ Repository / security notes:
 
 Example:
   export OPENAI_API_KEY="..."
-  python scripts/run_openai_responses.py \
+  python scripts/run_openai.py \
     --input data/ciphergrid.jsonl \
     --output results/gpt_5_4.csv \
     --model gpt-5.4 \

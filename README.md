@@ -41,10 +41,10 @@ The repository contains the benchmark-generation, vocabulary-remapping, model-ru
 ├── validate_solutions.py
 ├── validate_by_size.py
 ├── diagnose_error_types_with_empty.py
-├── run_openai_responses_repo.py
-├── run_qwen_ciphergrid_repo.py
-├── run_claude_main_repo.py
-└── run_gemini_main_repo.py
+├── run_openai.py
+├── run_qwen.py
+├── run_claude.py
+└── run_gemini.py
 ```
 
 Recommended local directories:
@@ -391,7 +391,7 @@ All provider runners:
 ### OpenAI Responses API
 
 ```bash
-python run_openai_responses_repo.py \
+python run_openai.py \
   --input data/benchmark.jsonl \
   --output results/openai_results.csv \
   --model <openai-model> \
@@ -424,7 +424,7 @@ Useful options:
 ### Qwen through DashScope
 
 ```bash
-python run_qwen_ciphergrid_repo.py \
+python run_qwen.py \
   --input data/benchmark.jsonl \
   --output results/qwen_results.csv \
   --model qwen3-vl-8b-thinking \
@@ -461,7 +461,7 @@ For compatibility with the other runners, the `reasoning_tokens` column stores `
 ### Anthropic Claude
 
 ```bash
-python run_claude_main_repo.py \
+python run_claude.py \
   --input data/benchmark.jsonl \
   --output results/claude_results.csv \
   --model claude-sonnet-4-6 \
@@ -495,7 +495,7 @@ The Claude runner includes the project-specific prompt adaptation used to reduce
 ### Google Gemini
 
 ```bash
-python run_gemini_main_repo.py \
+python run_gemini.py \
   --input data/benchmark.jsonl \
   --output results/gemini_results.csv \
   --model <gemini-model> \
@@ -626,7 +626,7 @@ Multiple error flags can be set for the same response. The script also prints th
 
 ```bash
 # 1. Run a provider
-python run_openai_responses_repo.py \
+python run_openai.py \
   --input data/benchmark.jsonl \
   --output results/openai_results.csv \
   --model <openai-model> \
@@ -661,7 +661,7 @@ python apply_custom_vocabulary.py \
   --output data/benchmark.abstract1.jsonl
 
 # 2. Run the model on the remapped benchmark
-python run_openai_responses_repo.py \
+python run_openai.py \
   --input data/benchmark.abstract1.jsonl \
   --output results/openai.abstract1.csv \
   --model <openai-model> \
