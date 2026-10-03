@@ -160,10 +160,9 @@ def main() -> None:
 
             if args.require_solvable and action_str == "ta":
                 if tries >= args.max_tries:
-                    # still write it out, but make it explicit
-                    encoded_lines.append(encoded)
-                    solution_lines.append(action_str)
-                    break
+                    raise RuntimeError(
+                        f"Failed to generate a solvable world {w} after {args.max_tries} attempts."
+                    )
                 continue
 
             encoded_lines.append(encoded)

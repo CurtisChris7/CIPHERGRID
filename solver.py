@@ -137,7 +137,7 @@ def build_masks(grid: List[List[str]]):
     H, W = len(grid), len(grid[0])
     swords = planks = monsters = traps = 0
     starts: List[Tuple[int, int]] = []
-    goal: Optional[Tuple[int, int]] = None
+    goals: List[Tuple[int, int]] = []
 
     for r in range(H):
         for c in range(W):
@@ -154,13 +154,14 @@ def build_masks(grid: List[List[str]]):
             elif t == START:
                 starts.append((r, c))
             elif t == GOAL:
-                goal = (r, c)
+                goals.append((r, c))
 
-    if not starts:
-        raise ValueError("No start tile 'na' found.")
-    if goal is None:
-        raise ValueError("No goal tile 'da' found.")
+    if len(starts) != 1:
+        raise ValueError(f"Expected exactly one start tile 'na', found {len(starts)}.")
+    if len(goals) != 1:
+        raise ValueError(f"Expected exactly one goal tile 'da', found {len(goals)}.")
 
+    goal = goals[0]
     return swords, planks, monsters, traps, starts, goal
 
 

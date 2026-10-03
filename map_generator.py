@@ -147,7 +147,7 @@ def generate_strings(cfg: Config) -> List[str]:
 
     # Assign each globally-once token to a unique slot
     # (shuffle tokens so distribution is random)
-    tokens = list(global_once)
+    tokens = sorted(global_once)
     rng.shuffle(tokens)
 
     for tok, (si, pi) in zip(tokens, all_slots[: len(tokens)]):
